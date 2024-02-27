@@ -41,6 +41,7 @@ export default {
                 error_title: "Failed to retrieve users",
                 error_message: error.message
             });
+            console.error('here')
         }
     }
 };

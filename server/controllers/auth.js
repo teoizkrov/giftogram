@@ -11,7 +11,8 @@ export default {
                 res.status(500).json({
                     error_code: 110,
                     error_title: "Login Failure",
-                    error_message: "Email or Password was Invalid"
+                    error_message: "Email or Password was Invalid",
+                    error_state: error.message
                 });
             })
     },

@@ -28,7 +28,7 @@ export default {
                 FROM users
                 WHERE email = ? AND password = ?`;
             const rows = await query(sql, [email, password]);
-            if (rows.length === 1) {
+            if (rows?.length === 1) {
                 return {
                     user_id: rows[0].user_id,
                     email: rows[0].email,
